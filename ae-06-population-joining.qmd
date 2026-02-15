@@ -132,12 +132,8 @@ population_summary
 
 # add code here
 ggplot(population_summary, aes(x = continent, y = total_pop)) +
-  geom_col() +
-  labs(
-    x = "Continents",
-    y = "Total Population (millions)",
-    title = "Total Population by Continent, 2022"
-  )
+    geom_col() +
+    labs(x = "Continents", y = "Total Population (millions)", title = "Total Population by Continent")
 ```
 
 -   **Your turn:** Recreate the following plot, which is commonly referred to as a **lollipop plot**. Hint: Start with the points, then try adding the `segment`s, then add axis labels and `caption`, and finally, as a stretch goal, update the x scale (which will require a function we haven't introduced in lectures or labs yet!).
